@@ -1,0 +1,106 @@
+[
+  {
+    "id": "duolingo-streaks",
+    "product": "Duolingo",
+    "feature": "Streak",
+    "industry": "Education — Language Learning",
+    "description": "Duolingo counts the number of consecutive days a learner completes at least one qualifying lesson, displaying the running total with a flame icon throughout the app. The company has adjusted the mechanic over time: it decoupled streak maintenance from completing a user's full daily goal so that any single lesson keeps the streak alive, added a purchasable/earnable safety-net item that forgives one missed day, and extended the mechanic socially through Friend Streak, where up to several mutually-connected friends each maintain their own linked streak and can prompt each other before the day ends.",
+    "mechanicStack": [
+      { "patternId": "daily-streak", "role": "Core mechanic — the consecutive-day count itself, shown via the flame icon." },
+      { "patternId": "adaptive-daily-goal", "role": "Supporting — any single lesson satisfies the streak regardless of the user's chosen daily goal size." },
+      { "patternId": "shared-streak", "role": "Supporting — Friend Streak extends the mechanic to a mutually-accountable version between connected users." },
+      { "patternId": "nudge-reminder", "role": "Supporting — personalised reminders and peer 'nudges' prompt action before a streak lapses." }
+    ],
+    "behaviourIds": ["repeat", "sustain", "connect"],
+    "psychologyLinks": [
+      { "psychologyId": "loss-ownership", "qualification": "Loss aversion is the most commonly cited explanation for streak motivation, but it is an interpretive frame rather than something Duolingo's own published evidence directly isolates." },
+      { "psychologyId": "social-influence", "qualification": "Friend Streak's reported association with higher completion is consistent with social-accountability effects, though the company's own data cannot rule out self-selection." }
+    ],
+    "evidenceIds": ["ev-duolingo-streak-wager", "ev-duolingo-goal-decoupling", "ev-duolingo-friend-streak"],
+    "designDecisions": [
+      "Decoupled streak extension from completing the full daily goal, prioritising consistency of habit over volume of practice per session",
+      "Introduced a forgiving safety-net item rather than keeping the mechanic strictly all-or-nothing",
+      "Made the social variant opt-in and mutual (both sides must accept) rather than default or one-directional"
+    ],
+    "tradeoffs": [
+      "Letting a single lesson satisfy the streak can decouple the 'streak maintained' signal from the amount of actual practice completed",
+      "A forgiving safety net softens the loss-aversion pressure that is believed to drive the base mechanic's effectiveness for some users, even as it reduces anxiety for others"
+    ],
+    "risks": [
+      "Streak mechanics are widely critiqued for producing guilt- or obligation-driven engagement rather than intrinsic motivation",
+      "The reported Friend Streak completion association may partly reflect which learners choose to set up shared streaks in the first place, rather than a pure causal effect of the feature"
+    ],
+    "relatedImplementationIds": [],
+    "sourceIds": ["src-duolingo-streaks-blog", "src-duolingo-improving-streak", "src-duolingo-friend-streak"],
+    "screenshotIds": ["sc-duolingo-streak"],
+    "lastReviewed": "2026-10-29"
+  },
+  {
+    "id": "apple-activity-rings",
+    "product": "Apple Watch / Fitness app",
+    "feature": "Activity Rings",
+    "industry": "Health & Fitness",
+    "description": "Apple Watch tracks three concurrent daily goals as rings: Move (active calories burned toward a personal, periodically-recalculated goal), Exercise (at least 30 minutes of brisk-pace or workout activity), and Stand (standing and moving for at least one minute in each of 12 different hours). Each ring visually 'closes' once its threshold is met. Hitting personal bests, milestones or taking part in seasonal events earns awards that accumulate in a trophy case in the Fitness app, and users can optionally share their rings with friends or family, including informal seven-day competitions scored by percentage of rings closed. For wheelchair users, Apple substitutes a 'Roll' ring that credits pushes instead of steps toward Move and Exercise.",
+    "mechanicStack": [
+      { "patternId": "progress-ring", "role": "Core mechanic — three independent daily progress meters that visually close on completion." },
+      { "patternId": "achievement-badges", "role": "Supporting — awards for personal bests, milestones and seasonal events fill a persistent trophy case." },
+      { "patternId": "social-fitness-competition", "role": "Supporting — optional sharing and short, scored competitions with friends or family." }
+    ],
+    "behaviourIds": ["repeat", "sustain", "complete", "connect"],
+    "psychologyLinks": [
+      { "psychologyId": "goals-progress", "qualification": "Visible, incremental progress toward a near, personally-set goal is a standard explanation for the rings' motivational design; this describes the design intent, not a measured effect." },
+      { "psychologyId": "social-influence", "qualification": "Optional comparison with friends draws on social-influence effects, which the opt-in design acknowledges can cut both ways (motivating or discouraging) depending on the user." }
+    ],
+    "evidenceIds": ["ev-apple-rings-illustrative"],
+    "designDecisions": [
+      "Split activity into three separate rings (intensity, duration, sedentary time) rather than one combined score, letting each dimension be tracked and closed on its own terms",
+      "Recalculates the Move goal periodically based on observed activity rather than using one fixed target for every user",
+      "Adapted the Stand ring into a 'Roll' ring for wheelchair users rather than excluding them from the mechanic entirely"
+    ],
+    "tradeoffs": [
+      "A full daily reset across all three rings can make one missed or partial day feel like a complete loss rather than a partial setback, a dynamic similar to streak mechanics",
+      "Optional social sharing introduces comparison dynamics that may motivate some users while discouraging others"
+    ],
+    "risks": [
+      "No independently published outcome study was located for this feature specifically; the entries here describe how it works, not verified behavioural results",
+      "Sharing personal health/activity data, even opt-in, can create social pressure some users find uncomfortable"
+    ],
+    "relatedImplementationIds": [],
+    "sourceIds": ["src-apple-close-rings", "src-apple-support-adjust-goals"],
+    "screenshotIds": ["sc-apple-rings"],
+    "lastReviewed": "2026-10-29"
+  },
+  {
+    "id": "spotify-wrapped",
+    "product": "Spotify",
+    "feature": "Wrapped",
+    "industry": "Music Streaming",
+    "description": "Once a year, Spotify compiles each user's own listening history — counted from January 1 through mid-November to allow time for data verification — into a personalised set of shareable slides covering top artists, songs and listening habits. Methodology combines algorithmic ranking (for example, weighting primary artists above featured artists, and counting a 'listen' only after 30 seconds of playback) with human editorial curation. The feature respects user privacy settings: listening during Private Mode, and tracks a user has marked 'exclude from Taste Profile', are not counted. Spotify has reported that engagement with the campaign grew year over year across a large number of markets and languages.",
+    "mechanicStack": [
+      { "patternId": "personalized-year-review", "role": "Core mechanic — converts a defined window of private listening data into a personalised, shareable narrative." }
+    ],
+    "behaviourIds": ["connect", "explore"],
+    "psychologyLinks": [
+      { "psychologyId": "attention-decision", "qualification": "Personalising and narratively framing a user's own historical data is intended to increase its salience and shareability; this is a plausible attention-based explanation, not a measured causal result for this specific feature." },
+      { "psychologyId": "social-influence", "qualification": "The shareable slide format is designed to be posted and seen by others, drawing on social-visibility effects to extend reach beyond the original user." }
+    ],
+    "evidenceIds": ["ev-spotify-engagement-growth"],
+    "designDecisions": [
+      "Combined algorithmic ranking with human editorial curation rather than a purely automated output",
+      "Used a fixed data window (January 1 to mid-November) to allow time for data verification ahead of release, rather than including the full calendar year",
+      "Respected existing privacy controls (Private Mode, 'exclude from Taste Profile') rather than overriding them for the sake of a more complete summary"
+    ],
+    "tradeoffs": [
+      "Excluding the final weeks of the year and privacy-excluded listening means Wrapped is a partial, not complete, picture of a user's year",
+      "Shared-device households may see results that blend multiple people's listening, trading individual accuracy for a single yearly artifact"
+    ],
+    "risks": [
+      "Turns otherwise-private behavioural data into a public, shareable artifact, which raises data-sensitivity considerations even though sharing itself is optional",
+      "Published engagement figures come from company communications rather than independent measurement"
+    ],
+    "relatedImplementationIds": [],
+    "sourceIds": ["src-spotify-wrapped-methodology", "src-spotify-wrapped-art-science", "src-spotify-ads-q4-2024"],
+    "screenshotIds": ["sc-spotify-wrapped"],
+    "lastReviewed": "2026-10-29"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "progress-completion",
+    "name": "Progress & Completion",
+    "description": "Patterns that visualise how far a user has come toward a defined end-point, such as meters, checklists and rings."
+  },
+  {
+    "id": "goals-challenges",
+    "name": "Goals & Challenges",
+    "description": "Patterns built around explicit targets — fixed or adaptive — that a user sets out to reach."
+  },
+  {
+    "id": "habits-consistency",
+    "name": "Habits & Consistency",
+    "description": "Patterns that track and reinforce repeated behaviour over time, typically on a daily or weekly cadence."
+  },
+  {
+    "id": "achievements-recognition",
+    "name": "Achievements & Recognition",
+    "description": "Patterns that mark milestones with a discrete, collectible signal of accomplishment."
+  },
+  {
+    "id": "levels-mastery",
+    "name": "Levels & Mastery",
+    "description": "Patterns that structure growth into discrete tiers reflecting increasing skill, effort or status."
+  },
+  {
+    "id": "rewards-incentives",
+    "name": "Rewards & Incentives",
+    "description": "Patterns that offer a tangible or virtual benefit in exchange for a target behaviour."
+  },
+  {
+    "id": "collections-discovery",
+    "name": "Collections & Discovery",
+    "description": "Patterns built around gathering a set of items or finding new content within a product."
+  },
+  {
+    "id": "competition-comparison",
+    "name": "Competition & Comparison",
+    "description": "Patterns that rank or compare a user's performance against others, directly or informally."
+  },
+  {
+    "id": "collaboration-community",
+    "name": "Collaboration & Community",
+    "description": "Patterns that connect multiple users around a shared activity, commitment or outcome."
+  },
+  {
+    "id": "unlocking-access",
+    "name": "Unlocking & Access",
+    "description": "Patterns that reveal new content, features or capability in response to a qualifying action."
+  },
+  {
+    "id": "feedback-reinforcement",
+    "name": "Feedback & Reinforcement",
+    "description": "Patterns that respond to a user's action with information or encouragement intended to shape future behaviour."
+  },
+  {
+    "id": "narrative-exploration",
+    "name": "Narrative & Exploration",
+    "description": "Patterns that frame a user's activity or data as a story, encouraging curiosity rather than a fixed objective."
+  }
+]

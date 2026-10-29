@@ -1,0 +1,125 @@
+[
+  {
+    "id": "activate",
+    "name": "Activate",
+    "definition": "Getting a new user to take their first meaningful action in a product, beyond signing up.",
+    "sampleObjectives": [
+      "Increase the share of new sign-ups who complete a first core action within 24 hours",
+      "Reduce time-to-first-value for new users"
+    ],
+    "patternLinks": [],
+    "relatedBehaviourIds": ["repeat"]
+  },
+  {
+    "id": "repeat",
+    "name": "Repeat",
+    "definition": "Increasing how often a user performs a core action over time, from occasional to frequent use.",
+    "sampleObjectives": [
+      "Increase weekly active usage among users who have already activated",
+      "Grow the share of users completing the core action at least five days a week"
+    ],
+    "patternLinks": [
+      { "patternId": "daily-streak", "rationale": "A visible, resettable count of consecutive days directly targets repetition of a specific qualifying action." },
+      { "patternId": "adaptive-daily-goal", "rationale": "Lowering the bar required to count as 'done that day' is a direct lever on repetition frequency, as seen in Duolingo's own change." },
+      { "patternId": "social-fitness-competition", "rationale": "A short, time-boxed comparison with others gives a recurring reason to act within the window." },
+      { "patternId": "nudge-reminder", "rationale": "A timely prompt close to a deadline is a direct intervention aimed at getting one more repetition in before the window closes." }
+    ],
+    "relatedBehaviourIds": ["sustain", "activate"]
+  },
+  {
+    "id": "sustain",
+    "name": "Sustain",
+    "definition": "Maintaining an existing level of participation over a longer period, resisting the natural tendency for engagement to decay.",
+    "sampleObjectives": [
+      "Reduce month-over-month decline in active streak/usage counts",
+      "Increase the share of engaged users still active after 90 days"
+    ],
+    "patternLinks": [
+      { "patternId": "daily-streak", "rationale": "The mechanic's entire purpose is maintaining an unbroken run, directly targeting sustained participation." },
+      { "patternId": "shared-streak", "rationale": "Mutual stakes with another person are intended to make a lapse feel costlier, supporting sustained participation." },
+      { "patternId": "progress-ring", "rationale": "A recurring daily goal with visible closure gives a reason to keep returning rather than letting the habit lapse." },
+      { "patternId": "nudge-reminder", "rationale": "Reminders near a deadline are a direct lever against the natural decay of participation." }
+    ],
+    "relatedBehaviourIds": ["repeat", "complete"]
+  },
+  {
+    "id": "complete",
+    "name": "Complete",
+    "definition": "Finishing a defined task or journey end-to-end, rather than stopping partway through.",
+    "sampleObjectives": [
+      "Increase the completion rate of a multi-step task or course",
+      "Reduce drop-off at known abandonment points in a journey"
+    ],
+    "patternLinks": [
+      { "patternId": "progress-ring", "rationale": "An explicit visual signal of closure (the ring joining up) marks the moment of completion itself." },
+      { "patternId": "achievement-badges", "rationale": "Awards granted on reaching a milestone give a tangible marker that a task or stage was actually finished." }
+    ],
+    "relatedBehaviourIds": ["sustain", "deepen"]
+  },
+  {
+    "id": "explore",
+    "name": "Explore",
+    "definition": "Prompting a user to try something unfamiliar within a product, rather than repeating only what they already know.",
+    "sampleObjectives": [
+      "Increase the share of users who try a feature or content category outside their usual pattern",
+      "Grow discovery of underused parts of a product's catalogue"
+    ],
+    "patternLinks": [
+      { "patternId": "personalized-year-review", "rationale": "Surfacing a user's own listening/activity back to them can highlight items or patterns they hadn't consciously noticed, a mild prompt toward exploring their own data — though this is a secondary effect, not the pattern's main purpose." }
+    ],
+    "relatedBehaviourIds": ["deepen"]
+  },
+  {
+    "id": "deepen",
+    "name": "Deepen",
+    "definition": "Increasing the skill, effort or commitment a user brings to an activity they already do.",
+    "sampleObjectives": [
+      "Increase average session depth or difficulty level chosen by returning users",
+      "Grow the share of users opting into a more demanding tier of an activity"
+    ],
+    "patternLinks": [
+      { "patternId": "adaptive-daily-goal", "rationale": "The goal-intensity setting is a direct lever on how much effort a user commits per session." },
+      { "patternId": "achievement-badges", "rationale": "Milestone awards tied to personal bests can encourage pushing effort further than the minimum required." }
+    ],
+    "relatedBehaviourIds": ["complete", "explore"]
+  },
+  {
+    "id": "connect",
+    "name": "Connect",
+    "definition": "Getting users to interact with, collaborate with, share with, or compete against other users.",
+    "sampleObjectives": [
+      "Increase the share of users with at least one active social connection in-product",
+      "Grow the volume of user-initiated shares of in-product content"
+    ],
+    "patternLinks": [
+      { "patternId": "shared-streak", "rationale": "The mechanic only functions between two or more connected users, directly targeting interaction." },
+      { "patternId": "social-fitness-competition", "rationale": "Comparing scores against others is a direct, if lightweight, form of competitive connection." },
+      { "patternId": "personalized-year-review", "rationale": "The pattern's shareable format is explicitly designed to be posted and seen by others, turning private data into a social object." }
+    ],
+    "relatedBehaviourIds": ["contribute"]
+  },
+  {
+    "id": "contribute",
+    "name": "Contribute",
+    "definition": "Getting users to create value for others, rather than only for themselves.",
+    "sampleObjectives": [
+      "Increase the volume of user-generated content or help offered to other users",
+      "Grow participation in peer-support or peer-accountability features"
+    ],
+    "patternLinks": [
+      { "patternId": "shared-streak", "rationale": "Sending a nudge to a friend whose streak is at risk is a small act of contributing to someone else's consistency, not just your own." }
+    ],
+    "relatedBehaviourIds": ["connect"]
+  },
+  {
+    "id": "switch",
+    "name": "Switch",
+    "definition": "Getting a user to adopt an alternative behaviour in place of an existing one.",
+    "sampleObjectives": [
+      "Increase adoption of a new default or recommended option over the previous one",
+      "Reduce reliance on a behaviour the product is trying to move users away from"
+    ],
+    "patternLinks": [],
+    "relatedBehaviourIds": []
+  }
+]

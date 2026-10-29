@@ -1,0 +1,192 @@
+[
+  {
+    "id": "daily-streak",
+    "name": "Daily Streak",
+    "familyId": "habits-consistency",
+    "patternType": "mechanic",
+    "classificationRationale": "A streak counter is a game-inspired structure — a running score that resets on failure — rather than a plain reminder, so it is classified as a Gamification Mechanic.",
+    "definition": "A visible count of consecutive days (or sessions) in which a user has completed a qualifying action, which resets to zero if a day is missed.",
+    "operation": "Each day the user completes the qualifying action (e.g. one lesson), a counter increments; the product displays the current count prominently, often with an icon, and the count returns to zero after a missed day unless a safety-net variant is in play.",
+    "variants": [
+      "Purchasable or earnable 'freeze' / insurance item that preserves the streak across one missed day",
+      "Decoupling the streak requirement from a larger daily goal, so any minimal qualifying action (not a full session) extends it"
+    ],
+    "possibleBehaviourIds": ["repeat", "sustain"],
+    "psychologyLinks": [
+      {
+        "psychologyId": "loss-ownership",
+        "qualification": "Loss aversion is commonly offered as the explanation for why streaks motivate — the fear of losing an existing count outweighs the appeal of extending it — but this is an interpretive frame, not something verified for every implementation."
+      }
+    ],
+    "risks": [
+      "Can produce guilt- or anxiety-driven engagement rather than intrinsic motivation, a frequently raised critique of streak mechanics generally",
+      "An all-or-nothing reset can discourage return after a single lapse unless a forgiving variant is offered"
+    ],
+    "sourceIds": ["src-duolingo-streaks-blog", "src-duolingo-improving-streak"]
+  },
+  {
+    "id": "shared-streak",
+    "name": "Shared Streak",
+    "familyId": "collaboration-community",
+    "patternType": "mechanic",
+    "classificationRationale": "This extends the streak game structure to two or more participants with mutual stakes, so it remains a Gamification Mechanic rather than a purely social feature.",
+    "definition": "A streak counter maintained jointly by two or more users, which continues only while every participant keeps completing the qualifying action.",
+    "operation": "A user invites one or more others; the streak becomes active once the invitation is mutually accepted. Each participant must independently complete the qualifying action for the shared count to continue, and participants can typically prompt each other to act before the day ends.",
+    "variants": [
+      "Reminder or 'nudge' prompts sent to a lagging participant by the others sharing the streak"
+    ],
+    "possibleBehaviourIds": ["sustain", "connect", "contribute"],
+    "psychologyLinks": [
+      {
+        "psychologyId": "social-influence",
+        "qualification": "Framed as mutual commitment / social accountability — people are more reluctant to let a shared obligation lapse than a private one — though the scale of the effect will vary by relationship and product."
+      }
+    ],
+    "risks": [
+      "May favour users who already have an engaged social circle, limiting it as a growth lever for isolated or new users",
+      "Reported associations between shared streaks and completion are easily confounded by self-selection — already-engaged users are more likely to set them up in the first place"
+    ],
+    "sourceIds": ["src-duolingo-friend-streak"]
+  },
+  {
+    "id": "progress-ring",
+    "name": "Progress Ring / Completion Meter",
+    "familyId": "progress-completion",
+    "patternType": "mechanic",
+    "classificationRationale": "A fillable, 'closeable' visual meter is a game-inspired progress structure (directly analogous to a quest or XP bar), so it is classified as a Gamification Mechanic.",
+    "definition": "One or more visual meters that fill as a user accumulates progress toward a personal goal within a fixed period (typically a day), and are explicitly marked 'complete' once the goal is reached.",
+    "operation": "The product tracks one or more underlying metrics continuously, maps accumulated value onto a ring, bar or similar shape, and visually signals closure (e.g. the ring joins up) once the goal threshold is met. Multiple independent rings can track different dimensions of the same broader behaviour at once.",
+    "variants": [
+      "Personalised, periodically-adjusted goal thresholds rather than one fixed target for all users",
+      "Adapted metrics for different user populations (e.g. crediting wheelchair pushes rather than steps)"
+    ],
+    "possibleBehaviourIds": ["repeat", "complete", "sustain"],
+    "psychologyLinks": [
+      {
+        "psychologyId": "goals-progress",
+        "qualification": "Visible, incremental progress toward a near goal is widely used to sustain effort; the specific magnitude of effect for any one ring design has not been independently verified here."
+      }
+    ],
+    "risks": [
+      "A daily reset can make a single missed day feel like a complete loss rather than a partial setback, similar to streak mechanics",
+      "No independently published outcome study was located for this pattern as implemented in the seed example — the description here covers mechanics, not proven effectiveness"
+    ],
+    "sourceIds": ["src-apple-close-rings", "src-apple-support-adjust-goals"]
+  },
+  {
+    "id": "adaptive-daily-goal",
+    "name": "Adaptive Daily Goal",
+    "familyId": "goals-challenges",
+    "patternType": "mechanic",
+    "classificationRationale": "A tunable target with a defined success threshold is a goal/challenge game structure, classified as a Gamification Mechanic.",
+    "definition": "A daily target whose size can be set or adjusted — by the user or the product — independently of other mechanics (such as a streak) that depend on reaching it.",
+    "operation": "A user is assigned or chooses a goal size (e.g. lesson intensity). The product may separately decide how much of that goal is actually required to satisfy a connected mechanic, and can adjust the required threshold based on observed behaviour across its user base.",
+    "variants": [
+      "Lowering the bar for a connected mechanic (e.g. a streak) independently of the stated goal size, to prioritise consistency over volume"
+    ],
+    "possibleBehaviourIds": ["repeat", "deepen"],
+    "psychologyLinks": [
+      {
+        "psychologyId": "motivation-autonomy",
+        "qualification": "Letting users choose goal intensity speaks to autonomy; separately, lowering the bar for a connected mechanic is a product design choice about trade-offs, not a claim about any single psychological mechanism."
+      }
+    ],
+    "risks": [
+      "Reducing the bar required to satisfy a connected mechanic can decouple the signal of 'success' from the amount of underlying activity actually performed"
+    ],
+    "sourceIds": ["src-duolingo-improving-streak"]
+  },
+  {
+    "id": "achievement-badges",
+    "name": "Achievement Badges / Awards",
+    "familyId": "achievements-recognition",
+    "patternType": "mechanic",
+    "classificationRationale": "A collectible marker awarded for reaching a milestone is one of the brief's own listed examples of a game-inspired structure, so it is classified as a Gamification Mechanic.",
+    "definition": "A discrete, collectible signal — a badge, award or trophy — granted when a user reaches a defined milestone, personal best, or participates in a time-limited event.",
+    "operation": "The product monitors for qualifying conditions (a personal best, a milestone count, participation in a seasonal event) and grants a visual award to a persistent collection the user can review.",
+    "variants": [
+      "Seasonal or time-limited awards tied to a calendar event rather than an open-ended milestone"
+    ],
+    "possibleBehaviourIds": ["complete", "deepen"],
+    "psychologyLinks": [
+      {
+        "psychologyId": "goals-progress",
+        "qualification": "Badges mark discrete progress points and can reinforce a sense of accumulating achievement; whether that translates into sustained behaviour change beyond the collecting itself is not established here."
+      }
+    ],
+    "risks": [
+      "Can shift attention toward collecting badges as an end in itself rather than the underlying behaviour the badge was meant to recognise"
+    ],
+    "sourceIds": ["src-apple-close-rings"]
+  },
+  {
+    "id": "social-fitness-competition",
+    "name": "Informal Social Competition",
+    "familyId": "competition-comparison",
+    "patternType": "mechanic",
+    "classificationRationale": "A scored, time-boxed comparison between participants is a competitive game structure, classified as a Gamification Mechanic.",
+    "definition": "A lightweight, often opt-in contest in which participants' activity is scored and compared over a fixed, short period.",
+    "operation": "Users opt in and share relevant activity data with each other; the product scores each participant (e.g. by percentage of a goal met) over a fixed window and surfaces the comparison, typically alongside ordinary progress tracking rather than replacing it.",
+    "variants": [
+      "Ongoing passive sharing of progress with friends/family without a formal time-boxed contest"
+    ],
+    "possibleBehaviourIds": ["connect", "repeat"],
+    "psychologyLinks": [
+      {
+        "psychologyId": "social-influence",
+        "qualification": "Social comparison can be motivating for some users and discouraging for others; the product's choice to make this opt-in is one way of managing that variability, not evidence that it works uniformly."
+      }
+    ],
+    "risks": [
+      "Sharing personal activity or health data, even opt-in, can create social pressure some users find uncomfortable"
+    ],
+    "sourceIds": ["src-apple-close-rings"]
+  },
+  {
+    "id": "personalized-year-review",
+    "name": "Personalised Year-in-Review",
+    "familyId": "narrative-exploration",
+    "patternType": "adjacent",
+    "classificationRationale": "This turns a user's own historical data into a personalised narrative with no points, levels, streaks or competitive structure — a behavioural engagement technique rather than a game structure — so it is classified as an Adjacent Engagement Pattern.",
+    "definition": "A periodic, personalised summary of a user's own activity data, presented as a shareable narrative or story rather than as a functional report.",
+    "operation": "The product aggregates a defined window of a user's historical activity data, applies ranking/weighting rules to surface standout items, blends algorithmic selection with editorial design, and packages the result as a shareable, visually distinct artifact separate from the product's everyday interface.",
+    "variants": [
+      "Separate editions tailored to different audiences (e.g. end listeners versus creators/artists) from the same underlying data"
+    ],
+    "possibleBehaviourIds": ["connect", "explore"],
+    "psychologyLinks": [
+      {
+        "psychologyId": "attention-decision",
+        "qualification": "Personalising and narratively framing a user's own data increases its salience and shareability; this describes a plausible attention mechanism, not a measured causal effect specific to any one edition of the feature."
+      }
+    ],
+    "risks": [
+      "Converts otherwise-private behavioural data into a public artifact, which raises data-sensitivity considerations even when sharing is optional",
+      "Methodology choices (time windows, exclusions, weighting) shape the output in ways most users are not positioned to evaluate"
+    ],
+    "sourceIds": ["src-spotify-wrapped-methodology", "src-spotify-wrapped-art-science"]
+  },
+  {
+    "id": "nudge-reminder",
+    "name": "Personalised Nudge / Reminder",
+    "familyId": "feedback-reinforcement",
+    "patternType": "adjacent",
+    "classificationRationale": "A targeted reminder or prompt is a general behavioural-engagement technique with no inherent game structure of its own — it is classified as an Adjacent Engagement Pattern, though it is frequently paired with mechanics such as streaks.",
+    "definition": "A message prompting a user to complete a qualifying action before a deadline (commonly the end of the day), personalised to the user's own status or sent by another participant on their behalf.",
+    "operation": "The product (or another user, in a shared-mechanic context) detects that a qualifying action has not yet been completed within a relevant window and sends a prompt, often timed close to the deadline and referencing the user's specific status (e.g. an at-risk streak).",
+    "variants": [
+      "Peer-sent 'nudges' from another participant in a shared mechanic, rather than a system-generated message"
+    ],
+    "possibleBehaviourIds": ["repeat", "sustain"],
+    "psychologyLinks": [
+      {
+        "psychologyId": "learning-reinforcement",
+        "qualification": "Timely, personalised prompts near a deadline are a standard behavioural-reinforcement technique; effectiveness depends heavily on frequency and relevance, which varies by product and was not independently measured here."
+      }
+    ],
+    "risks": [
+      "Poorly tuned frequency or tone can shift from helpful reminder to perceived nagging, risking notification fatigue or opt-out"
+    ],
+    "sourceIds": ["src-duolingo-streaks-blog", "src-duolingo-friend-streak"]
+  }
+]

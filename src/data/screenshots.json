@@ -1,0 +1,38 @@
+[
+  {
+    "id": "sc-duolingo-streak",
+    "implementationId": "duolingo-streaks",
+    "product": "Duolingo",
+    "feature": "Streak counter and flame icon",
+    "imagePath": null,
+    "sourceUrl": "https://blog.duolingo.com/how-streaks-keep-duolingo-learners-committed-to-their-language-goals/",
+    "captureDate": null,
+    "attribution": "Pending — rights-cleared image not yet sourced. View the linked source for the real feature.",
+    "lastReviewed": "2026-10-29",
+    "altText": "Placeholder image — an authentic screenshot of Duolingo's streak counter and flame icon has not yet been sourced."
+  },
+  {
+    "id": "sc-apple-rings",
+    "implementationId": "apple-activity-rings",
+    "product": "Apple Watch / Fitness app",
+    "feature": "Move, Exercise and Stand rings",
+    "imagePath": null,
+    "sourceUrl": "https://www.apple.com/watch/close-your-rings/",
+    "captureDate": null,
+    "attribution": "Pending — rights-cleared image not yet sourced. View the linked source for the real feature.",
+    "lastReviewed": "2026-10-29",
+    "altText": "Placeholder image — an authentic screenshot of Apple's Activity Rings has not yet been sourced."
+  },
+  {
+    "id": "sc-spotify-wrapped",
+    "implementationId": "spotify-wrapped",
+    "product": "Spotify",
+    "feature": "Personalised Wrapped summary slides",
+    "imagePath": null,
+    "sourceUrl": "https://newsroom.spotify.com/2025-12-05/wrapped-methodology-explained/",
+    "captureDate": null,
+    "attribution": "Pending — rights-cleared image not yet sourced. View the linked source for the real feature.",
+    "lastReviewed": "2026-10-29",
+    "altText": "Placeholder image — an authentic screenshot of Spotify Wrapped has not yet been sourced."
+  }
+]

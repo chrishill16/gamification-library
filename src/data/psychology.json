@@ -1,0 +1,32 @@
+[
+  {
+    "id": "motivation-autonomy",
+    "name": "Motivation & Autonomy",
+    "description": "Concepts distinguishing intrinsic motivation (acting because the activity itself is valued) from extrinsic motivation (acting for an external reward), and the degree of choice a user feels they have over their own behaviour."
+  },
+  {
+    "id": "goals-progress",
+    "name": "Goals & Progress",
+    "description": "Concepts about how setting a visible target, and seeing measurable movement toward it, shapes effort — including the tendency to accelerate effort as a goal gets closer."
+  },
+  {
+    "id": "loss-ownership",
+    "name": "Loss & Ownership",
+    "description": "Concepts about why losing something already held (a streak, a status, a collected set) is felt more strongly than gaining an equivalent new thing, often summarised as loss aversion."
+  },
+  {
+    "id": "social-influence",
+    "name": "Social Influence",
+    "description": "Concepts about how visibility of others' behaviour, social commitments and comparison change an individual's own actions."
+  },
+  {
+    "id": "learning-reinforcement",
+    "name": "Learning & Reinforcement",
+    "description": "Concepts from behavioural learning theory about how the timing and pattern of feedback or reward following an action affects whether that action is repeated."
+  },
+  {
+    "id": "attention-decision",
+    "name": "Attention & Decision-Making",
+    "description": "Concepts about how framing, personalisation and the salience of information affect what a user notices and how they decide what to do next."
+  }
+]

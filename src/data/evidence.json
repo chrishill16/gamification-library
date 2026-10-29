@@ -1,0 +1,37 @@
+[
+  {
+    "id": "ev-duolingo-streak-wager",
+    "classification": "experimental",
+    "summary": "In a controlled test of a streak-protection feature ('Streak Wager'), Duolingo reported statistically significant increases in Day-1, Day-7 and Day-14 retention among users offered the feature, with Day-7 retention showing the largest improvement, around +14%.",
+    "limitations": "This is a company-run A/B test reported on Duolingo's own blog, not an independently verified or peer-reviewed study; exact methodology, sample and confidence intervals were not published in the source.",
+    "sourceIds": ["src-duolingo-streaks-blog"]
+  },
+  {
+    "id": "ev-duolingo-goal-decoupling",
+    "classification": "experimental",
+    "summary": "After decoupling streak maintenance from completing the full daily goal, Duolingo reported Day-14 retention up 3.3%, overall daily active users up 1%, and the share of daily learners holding a 7+ day streak roughly doubling from about one-third to over half.",
+    "limitations": "Reported by the company from its own internal rollout test rather than an independent study; no raw data or confidence intervals were published.",
+    "sourceIds": ["src-duolingo-improving-streak"]
+  },
+  {
+    "id": "ev-duolingo-friend-streak",
+    "classification": "observational",
+    "summary": "Duolingo states that learners with at least one active Friend Streak are about 22% more likely to complete their daily lesson, and that the likelihood increases with more shared streaks.",
+    "limitations": "Framed as an association between having a shared streak and completion, not a randomized test — more socially connected or already-engaged learners may simply be more likely to set up shared streaks in the first place, so causation is not established.",
+    "sourceIds": ["src-duolingo-friend-streak"]
+  },
+  {
+    "id": "ev-apple-rings-illustrative",
+    "classification": "illustrative",
+    "summary": "Apple's own product pages document how the Move, Exercise and Stand rings work, the awards granted for milestones, and the optional sharing/competition features, without publishing outcome or retention data for the feature.",
+    "limitations": "No independently measured behavioural outcome data was located for this feature; this entry documents how it works, not evidence that it changes behaviour.",
+    "sourceIds": ["src-apple-close-rings", "src-apple-support-adjust-goals"]
+  },
+  {
+    "id": "ev-spotify-engagement-growth",
+    "classification": "reported",
+    "summary": "Spotify reported that Wrapped engagement grew roughly 10% year-over-year across 184 markets and 53 languages for its most recent annual campaign at the time of review.",
+    "limitations": "A company-published growth figure from an earnings-related communication, with no independent methodology disclosed for how 'engagement' was measured.",
+    "sourceIds": ["src-spotify-ads-q4-2024"]
+  }
+]
