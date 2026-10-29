@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router-dom'
 
 import { ClassificationBadge } from '../components/ClassificationBadge'
 import { ImplementationCard } from '../components/ImplementationCard'
+import { PatternWireframe } from '../components/icons/PatternIcons'
 import { implementationsByPatternId, indexes } from '../lib/loadContent'
 
 export function PatternDetail() {
@@ -30,13 +31,23 @@ export function PatternDetail() {
         ← Back to Mechanics Explorer
       </Link>
 
-      <header className="space-y-3">
-        <div className="flex flex-wrap items-center gap-3">
-          <h1 className="text-2xl font-semibold text-ink">{pattern.name}</h1>
-          <ClassificationBadge type={pattern.patternType} />
+      <header className="flex flex-wrap items-start gap-6">
+        <div className="space-y-3">
+          <div className="flex flex-wrap items-center gap-3">
+            <h1 className="text-2xl font-semibold text-ink">{pattern.name}</h1>
+            <ClassificationBadge type={pattern.patternType} />
+          </div>
+          <p className="text-sm font-medium text-ink-muted">{family?.name}</p>
+          <p className="max-w-2xl text-ink">{pattern.definition}</p>
         </div>
-        <p className="text-sm font-medium text-ink-muted">{family?.name}</p>
-        <p className="max-w-2xl text-ink">{pattern.definition}</p>
+        <div className="w-full max-w-[220px] shrink-0 overflow-hidden rounded-xl bg-accent-soft p-4 sm:ml-auto">
+          <PatternWireframe
+            patternId={pattern.id}
+            className="h-full w-full"
+            role="img"
+            aria-label={`Representative UI wireframe for ${pattern.name}`}
+          />
+        </div>
       </header>
 
       <section className="space-y-2">

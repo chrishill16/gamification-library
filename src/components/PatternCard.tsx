@@ -4,6 +4,7 @@ import { indexes } from '../lib/loadContent'
 import type { ViewMode } from '../lib/useViewPreference'
 import type { Pattern } from '../types/content'
 import { ClassificationBadge } from './ClassificationBadge'
+import { PatternWireframe } from './icons/PatternIcons'
 
 export function PatternCard({ pattern, view }: { pattern: Pattern; view: ViewMode }) {
   const family = indexes.patternFamilyById.get(pattern.familyId)
@@ -17,10 +18,11 @@ export function PatternCard({ pattern, view }: { pattern: Pattern; view: ViewMod
         to={`/mechanics/${pattern.id}`}
         className="group block overflow-hidden rounded-xl border border-border-subtle bg-surface-raised transition-shadow hover:shadow-md"
       >
-        <div className="flex aspect-[4/3] items-center justify-center bg-accent-soft">
-          <span className="px-6 text-center text-lg font-semibold text-accent">{pattern.name}</span>
+        <div className="flex aspect-[4/3] items-center justify-center bg-accent-soft p-5 transition-transform group-hover:scale-[1.02]">
+          <PatternWireframe patternId={pattern.id} className="h-full w-full" role="img" aria-label={`Representative UI wireframe for ${pattern.name}`} />
         </div>
         <div className="space-y-2 p-4">
+          <h3 className="font-semibold text-ink">{pattern.name}</h3>
           <div className="flex items-center justify-between gap-2">
             <ClassificationBadge type={pattern.patternType} />
           </div>
