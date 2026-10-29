@@ -15,11 +15,13 @@ export function ImplementationCard({ implementation, view }: { implementation: I
         to={`/examples/${implementation.id}`}
         className="group block overflow-hidden rounded-xl border border-border-subtle bg-surface-raised transition-shadow hover:shadow-md"
       >
-        <img
-          src={screenshot?.imagePath ?? '/gamification-library/placeholder-screenshot.svg'}
-          alt={screenshot?.altText ?? `${implementation.product} — screenshot pending`}
-          className="aspect-[4/3] w-full object-cover"
-        />
+        <div className="flex aspect-[4/3] w-full items-center justify-center bg-ink/5">
+          <img
+            src={screenshot?.imagePath ?? '/gamification-library/placeholder-screenshot.svg'}
+            alt={screenshot?.altText ?? `${implementation.product} — screenshot pending`}
+            className="h-full w-full object-contain"
+          />
+        </div>
         <div className="space-y-1 p-4">
           <p className="font-semibold text-ink">{implementation.product}</p>
           <p className="text-sm text-ink-muted">{implementation.feature}</p>

@@ -4,35 +4,35 @@
     "implementationId": "duolingo-streaks",
     "product": "Duolingo",
     "feature": "Streak counter and flame icon",
-    "imagePath": null,
+    "imagePath": "/gamification-library/screenshots/sc-duolingo-streak.png",
     "sourceUrl": "https://blog.duolingo.com/how-streaks-keep-duolingo-learners-committed-to-their-language-goals/",
-    "captureDate": null,
-    "attribution": "Pending — rights-cleared image not yet sourced. View the linked source for the real feature.",
+    "captureDate": "2026-10-29",
+    "attribution": "© Duolingo. First-party product image embedded in Duolingo's official blog post (storage.ghost.io asset). Not freely licensed — reproduced here for commentary/reference; verify Duolingo's brand and media-use terms before any broader publication.",
     "lastReviewed": "2026-10-29",
-    "altText": "Placeholder image — an authentic screenshot of Duolingo's streak counter and flame icon has not yet been sourced."
+    "altText": "Duolingo's Spanish course home screen, showing the streak counter (a flame icon with the number 3) and skill tree."
   },
   {
     "id": "sc-apple-rings",
     "implementationId": "apple-activity-rings",
     "product": "Apple Watch / Fitness app",
     "feature": "Move, Exercise and Stand rings",
-    "imagePath": null,
+    "imagePath": "/gamification-library/screenshots/sc-apple-rings.png",
     "sourceUrl": "https://www.apple.com/watch/close-your-rings/",
-    "captureDate": null,
-    "attribution": "Pending — rights-cleared image not yet sourced. View the linked source for the real feature.",
+    "captureDate": "2026-10-29",
+    "attribution": "© Apple. First-party hero image from Apple's official 'Close Your Rings' product page. Not freely licensed — reproduced here for commentary/reference; verify Apple's brand and media-use terms before any broader publication.",
     "lastReviewed": "2026-10-29",
-    "altText": "Placeholder image — an authentic screenshot of Apple's Activity Rings has not yet been sourced."
+    "altText": "Apple Watch face showing the three Activity Rings — pink Move, green Exercise, and blue Stand — partially closed."
   },
   {
     "id": "sc-spotify-wrapped",
     "implementationId": "spotify-wrapped",
     "product": "Spotify",
-    "feature": "Personalised Wrapped summary slides",
-    "imagePath": null,
-    "sourceUrl": "https://newsroom.spotify.com/2025-12-05/wrapped-methodology-explained/",
-    "captureDate": null,
-    "attribution": "Pending — rights-cleared image not yet sourced. View the linked source for the real feature.",
+    "feature": "2025 Wrapped — personalised Minutes Listened story",
+    "imagePath": "/gamification-library/screenshots/sc-spotify-wrapped.png",
+    "sourceUrl": "https://newsroom.spotify.com/2025-12-03/2025-wrapped-user-experience/",
+    "captureDate": "2026-10-29",
+    "attribution": "© Spotify. First-party product-experience image from Spotify's official newsroom. Not freely licensed — reproduced here for commentary/reference; verify Spotify's brand and media-use terms before any broader publication.",
     "lastReviewed": "2026-10-29",
-    "altText": "Placeholder image — an authentic screenshot of Spotify Wrapped has not yet been sourced."
+    "altText": "Two Spotify Wrapped 2025 story slides on a yellow background: 'You listened. We counted.' and a personalised minutes-listened total of 78,432 minutes with a 'Share this story' button."
   }
 ]
