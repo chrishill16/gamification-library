@@ -7,7 +7,9 @@
       "Increase the share of new sign-ups who complete a first core action within 24 hours",
       "Reduce time-to-first-value for new users"
     ],
-    "patternLinks": [],
+    "patternLinks": [
+      { "patternId": "named-progress-levels", "rationale": "Starting visibly at the lowest named tier, with a concrete next step shown, gives a new user an immediate, low-effort action to take." }
+    ],
     "relatedBehaviourIds": ["repeat"]
   },
   {
@@ -24,7 +26,9 @@
       { "patternId": "social-fitness-competition", "rationale": "A short, time-boxed comparison with others gives a recurring reason to act within the window." },
       { "patternId": "nudge-reminder", "rationale": "A timely prompt close to a deadline is a direct intervention aimed at getting one more repetition in before the window closes." },
       { "patternId": "activity-history-heatmap", "rationale": "A persistent, visible record of daily activity can make recent gaps salient, nudging a user to act again today." },
-      { "patternId": "leaderboard", "rationale": "An ongoing, repeatable benchmark gives a standing reason to return and improve a ranked result." }
+      { "patternId": "leaderboard", "rationale": "An ongoing, repeatable benchmark gives a standing reason to return and improve a ranked result." },
+      { "patternId": "reward-currency", "rationale": "An accumulating balance that grows with each qualifying action gives a standing reason to keep acting rather than stopping once a single reward is claimed." },
+      { "patternId": "time-limited-challenge", "rationale": "A challenge spanning several days requires repeated qualifying actions within the window, not a single one-off action." }
     ],
     "relatedBehaviourIds": ["sustain", "activate"]
   },
@@ -41,7 +45,8 @@
       { "patternId": "shared-streak", "rationale": "Mutual stakes with another person are intended to make a lapse feel costlier, supporting sustained participation." },
       { "patternId": "progress-ring", "rationale": "A recurring daily goal with visible closure gives a reason to keep returning rather than letting the habit lapse." },
       { "patternId": "nudge-reminder", "rationale": "Reminders near a deadline are a direct lever against the natural decay of participation." },
-      { "patternId": "activity-history-heatmap", "rationale": "A long-running visible history gives a reason not to let a well-established record lapse, even without a formal streak rule." }
+      { "patternId": "activity-history-heatmap", "rationale": "A long-running visible history gives a reason not to let a well-established record lapse, even without a formal streak rule." },
+      { "patternId": "community-challenge", "rationale": "A shared, ongoing collective target gives participants a reason to keep contributing rather than stopping after one session, since the group total is still accumulating." }
     ],
     "relatedBehaviourIds": ["repeat", "complete"]
   },
@@ -55,7 +60,9 @@
     ],
     "patternLinks": [
       { "patternId": "progress-ring", "rationale": "An explicit visual signal of closure (the ring joining up) marks the moment of completion itself." },
-      { "patternId": "achievement-badges", "rationale": "Awards granted on reaching a milestone give a tangible marker that a task or stage was actually finished." }
+      { "patternId": "achievement-badges", "rationale": "Awards granted on reaching a milestone give a tangible marker that a task or stage was actually finished." },
+      { "patternId": "time-limited-challenge", "rationale": "The challenge explicitly marks completion as a distinct, defined end-state rather than letting the activity trail off indefinitely." },
+      { "patternId": "named-progress-levels", "rationale": "Reaching the top named tier is itself the explicit completion state the pattern is built around." }
     ],
     "relatedBehaviourIds": ["sustain", "deepen"]
   },
@@ -100,7 +107,8 @@
       { "patternId": "social-fitness-competition", "rationale": "Comparing scores against others is a direct, if lightweight, form of competitive connection." },
       { "patternId": "personalized-year-review", "rationale": "The pattern's shareable format is explicitly designed to be posted and seen by others, turning private data into a social object." },
       { "patternId": "leaderboard", "rationale": "A shared, ranked comparison against other participants is a direct form of competitive connection." },
-      { "patternId": "social-signalling", "rationale": "Making a user's activity visible on a public profile is a direct, if passive, way of connecting with other users." }
+      { "patternId": "social-signalling", "rationale": "Making a user's activity visible on a public profile is a direct, if passive, way of connecting with other users." },
+      { "patternId": "community-challenge", "rationale": "Aggregating participants' activity into one shared goal is itself a direct form of connection, even without any individual comparison or ranking." }
     ],
     "relatedBehaviourIds": ["contribute"]
   },

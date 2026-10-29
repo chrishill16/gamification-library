@@ -288,5 +288,103 @@
       "Stable benchmarks can still be affected by external conditions, so a 'best' result may not purely reflect improved effort or skill"
     ],
     "sourceIds": ["src-strava-segment-results"]
+  },
+  {
+    "id": "time-limited-challenge",
+    "name": "Time-Limited Challenge",
+    "familyId": "goals-challenges",
+    "patternType": "mechanic",
+    "classificationRationale": "A finite, deadline-bound target with a defined reward or completion state is a goal/challenge game structure, classified as a Gamification Mechanic.",
+    "definition": "A challenge that defines one or more qualifying actions, or a measurable target, to be completed within a fixed window, after which it expires whether or not it was met.",
+    "operation": "The product defines qualifying actions or a target metric and a start/end time, tracks progress against that target during the window, and marks the challenge complete — often with a reward — if the target is met before the deadline; the challenge otherwise lapses unmet.",
+    "variants": [
+      "Personalised or account-specific challenge terms rather than one challenge offered identically to all users",
+      "A distance, count or spend-based target rather than a single qualifying action"
+    ],
+    "possibleBehaviourIds": ["complete", "repeat", "deepen"],
+    "psychologyLinks": [
+      {
+        "psychologyId": "goals-progress",
+        "qualification": "A concrete target with a visible deadline is a standard goal-gradient / urgency device; this describes the design, not measured evidence that it changes behaviour beyond what would have happened anyway."
+      }
+    ],
+    "risks": [
+      "A hard deadline can create pressure to act sooner, more often or more intensely than a user would otherwise choose",
+      "Personalised or account-specific terms can make challenges difficult for users to compare or fully understand"
+    ],
+    "sourceIds": ["src-starbucks-rewards-terms", "src-nike-help-challenges"]
+  },
+  {
+    "id": "reward-currency",
+    "name": "Reward Currency",
+    "familyId": "rewards-incentives",
+    "patternType": "mechanic",
+    "classificationRationale": "A persistent, accumulable in-product currency earned through qualifying actions and redeemable for value is a core game-economy structure, classified as a Gamification Mechanic.",
+    "definition": "A virtual currency or points balance that accumulates as a user completes qualifying actions, and can later be redeemed according to the product's current rules.",
+    "operation": "The product credits a user's currency balance on completing qualifying actions — including, in some cases, bonus amounts from time-limited promotions — maintains the balance as part of the broader account, and allows redemption against a published or evolving set of options.",
+    "variants": [
+      "Bonus or promotional currency awarded for completing a specific time-limited challenge, in addition to the standard earn rate"
+    ],
+    "possibleBehaviourIds": ["repeat", "complete"],
+    "psychologyLinks": [
+      {
+        "psychologyId": "learning-reinforcement",
+        "qualification": "A currency credited for qualifying actions is a contingent-reward structure; the reviewed sources describe the mechanic, not an isolated measurement of its effect on purchasing or usage behaviour."
+      }
+    ],
+    "risks": [
+      "Can incentivise actions taken mainly to earn currency rather than for their own value",
+      "Redemption rules and currency value can change over time, affecting the real worth of an accumulated balance"
+    ],
+    "sourceIds": ["src-starbucks-rewards-terms", "src-starbucks-rewards"]
+  },
+  {
+    "id": "named-progress-levels",
+    "name": "Named Progress Levels",
+    "familyId": "levels-mastery",
+    "patternType": "mechanic",
+    "classificationRationale": "Naming discrete tiers that a user advances through based on completed steps is a levelling game structure, classified as a Gamification Mechanic.",
+    "definition": "A small set of named tiers representing increasing completion or mastery, which a user advances through by completing specific recommended steps, with the current tier and next step shown prominently.",
+    "operation": "The product defines an ordered set of named tiers, each requiring a specific number or set of completed steps; it evaluates the user's current completed steps against each tier's threshold, displays the current tier and the next incomplete step, and removes or changes the display once the top tier is reached.",
+    "variants": [
+      "Keeping the tier status private to the user rather than displaying it to other users",
+      "Removing the level indicator entirely once the top tier is reached, rather than leaving a permanent marker"
+    ],
+    "possibleBehaviourIds": ["complete", "activate", "deepen"],
+    "psychologyLinks": [
+      {
+        "psychologyId": "goals-progress",
+        "qualification": "Naming discrete tiers and showing the next concrete step is consistent with goal-gradient effects, but the reviewed sources document the design, not a measured effect on completion rates."
+      }
+    ],
+    "risks": [
+      "Can encourage standardised completion of recommended steps even where a step isn't relevant to a particular user",
+      "A top-tier label can imply quality or value when it may only reflect field completion"
+    ],
+    "sourceIds": ["src-linkedin-profile-strength-help"]
+  },
+  {
+    "id": "community-challenge",
+    "name": "Community Challenge",
+    "familyId": "collaboration-community",
+    "patternType": "mechanic",
+    "classificationRationale": "Aggregating multiple participants' individual contributions toward one shared, measurable target is a collective-goal game structure, classified as a Gamification Mechanic.",
+    "definition": "A challenge in which the qualifying activity of many participants is summed toward one shared target, rather than each participant having their own separate goal.",
+    "operation": "The product defines a shared target and a window, aggregates each participating user's qualifying activity into a running collective total, and displays the combined progress toward the shared target to participants.",
+    "variants": [
+      "Allowing a user to create a custom version of the challenge and invite specific other participants, rather than only joining an open, product-run one"
+    ],
+    "possibleBehaviourIds": ["connect", "sustain", "repeat"],
+    "psychologyLinks": [
+      {
+        "psychologyId": "social-influence",
+        "qualification": "A visible collective target can introduce cooperative or accountability dynamics; the reviewed sources describe the design, not a measured effect on individual participation."
+      }
+    ],
+    "risks": [
+      "An individual's contribution can feel insignificant against a large collective total, particularly at scale",
+      "Aggregated totals can mask very uneven contribution levels among participants"
+    ],
+    "sourceIds": ["src-nike-help-challenges"]
   }
 ]

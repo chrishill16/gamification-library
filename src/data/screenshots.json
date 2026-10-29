@@ -58,5 +58,41 @@
     "attribution": "© Strava. First-party screenshot from Strava's official Help Center (source file: 2_0_km_Virtual_Ride_Segment_in_London__England__United_Kingdom_on_Strava.jpg, originally served via a signed, expiring Intercom attachment URL — the durable official context page is used as the canonical source link here). Not freely licensed — reproduced here for commentary/reference; verify Strava's brand and media-use terms before any broader publication.",
     "lastReviewed": "2026-10-30",
     "altText": "A Strava segment page showing the athlete's 'My Results' effort graph with a personal record marked, and a Leaderboards panel with ranked results."
+  },
+  {
+    "id": "sc-starbucks-rewards-challenge",
+    "implementationId": "starbucks-rewards-challenges",
+    "product": "Starbucks",
+    "feature": "Rewards Menu Challenge",
+    "imagePath": "/gamification-library/screenshots/sc-starbucks-rewards-challenge.jpg",
+    "sourceUrl": "https://moorewithmiles.com/2018/09/great-chance-to-earn-175-starbucks-stars/",
+    "captureDate": "2026-10-30",
+    "attribution": "Historical Starbucks Rewards challenge UI from September 2018, sourced from an independent travel/loyalty blog (Moore with Miles) — not an official Starbucks media asset. Challenge details and programme rules may have changed since. Reproduced here for commentary/reference; not freely licensed — verify rights before any broader publication.",
+    "lastReviewed": "2026-10-30",
+    "altText": "A Starbucks mobile app screen showing a Menu Challenge requiring three specified purchases within three days to earn 100 Bonus Stars, with progress toward the required purchases shown."
+  },
+  {
+    "id": "sc-linkedin-profile-strength",
+    "implementationId": "linkedin-profile-level-meter",
+    "product": "LinkedIn",
+    "feature": "Profile strength meter — All-Star state",
+    "imagePath": "/gamification-library/screenshots/sc-linkedin-profile-strength.jpg",
+    "sourceUrl": "https://www.linkedin.com/pulse/achieving-all-star-status-linkedin-sophie-milliken-fcipd-frsa",
+    "captureDate": "2026-10-30",
+    "attribution": "Historical LinkedIn All-Star profile-strength UI from March 2021, sourced from a member-authored LinkedIn Pulse article — not an official LinkedIn Help media asset. Current levels and behaviour are documented separately by LinkedIn Help. Reproduced here for commentary/reference; not freely licensed — verify rights before any broader publication.",
+    "lastReviewed": "2026-10-30",
+    "altText": "A LinkedIn profile strength panel showing the All-Star completion state, the highest of three named profile-completeness levels."
+  },
+  {
+    "id": "sc-nike-run-club-challenges",
+    "implementationId": "nike-run-club-challenges",
+    "product": "Nike",
+    "feature": "Nike Run Club — Challenges",
+    "imagePath": "/gamification-library/screenshots/sc-nike-run-club-challenges.jpg",
+    "sourceUrl": "https://www.nike.com/nrc-app",
+    "captureDate": "2026-10-30",
+    "attribution": "© Nike. First-party image from Nike's official Nike Run Club (NRC) app marketing page. Not freely licensed — reproduced here for commentary/reference; verify Nike's brand and media-use terms before any broader publication.",
+    "lastReviewed": "2026-10-30",
+    "altText": "A Nike Run Club app screen showing distance-based running challenges with progress and participant information."
   }
 ]

@@ -96,5 +96,68 @@
     "url": "https://support.strava.com/en-us/articles/15401987-how-do-my-activity-privacy-controls-work-on-strava",
     "publisher": "Strava Support",
     "accessedDate": "2026-10-30"
+  },
+  {
+    "id": "src-starbucks-rewards",
+    "title": "Starbucks Rewards",
+    "url": "https://www.starbucks.com/rewards",
+    "publisher": "Starbucks",
+    "accessedDate": "2026-10-30"
+  },
+  {
+    "id": "src-starbucks-rewards-terms",
+    "title": "Starbucks Rewards Program Terms and Conditions",
+    "url": "https://www.starbucks.com/terms/rewards",
+    "publisher": "Starbucks",
+    "accessedDate": "2026-10-30"
+  },
+  {
+    "id": "src-starbucks-rewards-promo",
+    "title": "Starbucks Rewards Promotional Offer Opt-In",
+    "url": "https://www.starbucks.com/rewards/promo/opt-in/success",
+    "publisher": "Starbucks",
+    "accessedDate": "2026-10-30"
+  },
+  {
+    "id": "src-starbucks-screenshot-context",
+    "title": "Great Chance to Earn 175 Starbucks Stars",
+    "url": "https://moorewithmiles.com/2018/09/great-chance-to-earn-175-starbucks-stars/",
+    "publisher": "Moore with Miles (independent blog)",
+    "accessedDate": "2026-10-30"
+  },
+  {
+    "id": "src-linkedin-profile-strength-help",
+    "title": "Viewing Your Profile Strength Meter",
+    "url": "https://www.linkedin.com/help/linkedin/answer/a594698/viewing-your-profile-strength-meter?lang=en",
+    "publisher": "LinkedIn Help",
+    "accessedDate": "2026-10-30"
+  },
+  {
+    "id": "src-linkedin-edit-profile-help",
+    "title": "Edit Your Profile",
+    "url": "https://www.linkedin.com/help/linkedin/answer/a554351/edit-your-profile?lang=en",
+    "publisher": "LinkedIn Help",
+    "accessedDate": "2026-10-30"
+  },
+  {
+    "id": "src-linkedin-screenshot-context",
+    "title": "Achieving All-Star Status on LinkedIn",
+    "url": "https://www.linkedin.com/pulse/achieving-all-star-status-linkedin-sophie-milliken-fcipd-frsa",
+    "publisher": "LinkedIn (member-authored article)",
+    "accessedDate": "2026-10-30"
+  },
+  {
+    "id": "src-nike-help-challenges",
+    "title": "Nike Run Club Challenges",
+    "url": "https://www.nike.com/help/a/nrc-challenges/ntc-nrc",
+    "publisher": "Nike Help",
+    "accessedDate": "2026-10-30"
+  },
+  {
+    "id": "src-nike-nrc-app",
+    "title": "Nike Run Club App",
+    "url": "https://www.nike.com/nrc-app",
+    "publisher": "Nike",
+    "accessedDate": "2026-10-30"
   }
 ]

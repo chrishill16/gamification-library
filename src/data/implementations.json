@@ -178,5 +178,115 @@
     "sourceIds": ["src-strava-segment-results", "src-strava-ride-activity-pages", "src-strava-privacy-controls"],
     "screenshotIds": ["sc-strava-segments"],
     "lastReviewed": "2026-10-30"
+  },
+  {
+    "id": "starbucks-rewards-challenges",
+    "product": "Starbucks",
+    "feature": "Rewards Menu Challenge",
+    "industry": "Food & Beverage / Loyalty",
+    "description": "Starbucks Rewards periodically gives members personalised promotional challenges in the app. A challenge defines qualifying purchases or visits, a completion window and a Bonus Stars reward; the app shows progress toward the required actions and the time remaining. Earned Stars contribute to the member's wider Stars balance and can be redeemed under the programme's current rules. The supplied screenshot documents a 2018 Menu Challenge requiring three specified purchases within three days for 100 Bonus Stars — a documented historical execution, not the current universal challenge format or reward value.",
+    "mechanicStack": [
+      { "patternId": "time-limited-challenge", "role": "Core mechanic — defines the specific qualifying purchases and the three-day completion window." },
+      { "patternId": "reward-currency", "role": "Core mechanic — Bonus Stars earned on completion add to the member's existing Stars balance." },
+      { "patternId": "progress-ring", "role": "Supporting — the app shows completed and remaining steps toward the challenge target." }
+    ],
+    "behaviourIds": ["repeat", "complete", "explore", "switch"],
+    "psychologyLinks": [
+      { "psychologyId": "goals-progress", "qualification": "Explicit steps and visible completion status may reduce ambiguity and make the next action salient. This is a plausible mechanism, not evidence of incremental purchasing impact." },
+      { "psychologyId": "learning-reinforcement", "qualification": "Bonus Stars provide a contingent reward for qualifying behaviour; the reviewed sources do not isolate whether the challenge changes behaviour beyond purchases that would have occurred anyway." },
+      { "psychologyId": "attention-decision", "qualification": "A deadline makes the offer temporally salient, while also creating urgency that may encourage unnecessary purchases." }
+    ],
+    "evidenceIds": ["ev-starbucks-challenge-illustrative"],
+    "designDecisions": [
+      "Connects a short promotional challenge to the programme's persistent Stars currency",
+      "Makes progress and remaining time visible in the challenge card",
+      "Can require specific products, visits or transactions rather than spend alone",
+      "Uses personalised, account-bound offers with additional terms and restrictions"
+    ],
+    "tradeoffs": [
+      "May encourage purchases a member did not otherwise intend to make",
+      "Personalised eligibility can make offers difficult to compare or explain"
+    ],
+    "risks": [
+      "Short windows and exclusions can cause frustration when progress fails to register",
+      "Reward optimisation may displace intrinsic preferences or healthier purchasing choices"
+    ],
+    "relatedImplementationIds": [],
+    "sourceIds": ["src-starbucks-rewards", "src-starbucks-rewards-terms", "src-starbucks-rewards-promo", "src-starbucks-screenshot-context"],
+    "screenshotIds": ["sc-starbucks-rewards-challenge"],
+    "lastReviewed": "2026-10-30"
+  },
+  {
+    "id": "linkedin-profile-level-meter",
+    "product": "LinkedIn",
+    "feature": "Profile Strength Meter",
+    "industry": "Professional Networking",
+    "description": "LinkedIn's profile strength meter shows a member how complete their profile is and recommends sections to add. LinkedIn's current help documentation describes three states: Beginner, Intermediate after completing four recommended sections, and All-Star after completing all seven (Profile Photo, Location, Industry, Education, Position, Skills, Summary). The meter is private to the member, appears on desktop and mobile, and stops being displayed once the recommended sections are complete. The supplied screenshot is a historical All-Star completion state from a 2021 LinkedIn-hosted member article — current rules and interface are documented separately by LinkedIn Help.",
+    "mechanicStack": [
+      { "patternId": "named-progress-levels", "role": "Core mechanic — names the Beginner, Intermediate and All-Star states and the sections required to reach each." },
+      { "patternId": "progress-ring", "role": "Core mechanic — visualises progress toward completing the recommended profile sections and identifies the next missing one." }
+    ],
+    "behaviourIds": ["complete", "activate", "deepen"],
+    "psychologyLinks": [
+      { "psychologyId": "goals-progress", "qualification": "A visible finish state and missing-section prompts make an otherwise open-ended profile task concrete. This is consistent with progress-feedback and goal-gradient explanations, but the reviewed sources do not experimentally isolate those effects." },
+      { "psychologyId": "attention-decision", "qualification": "Suggestions direct attention toward specific incomplete fields, reducing the effort needed to decide what to add next." }
+    ],
+    "evidenceIds": ["ev-linkedin-profile-illustrative"],
+    "designDecisions": [
+      "Keeps the completeness level private rather than displaying it to profile visitors",
+      "Converts seven recommended sections into named progress levels",
+      "Removes the meter after completion instead of leaving a permanent badge in the interface",
+      "Links progress directly to actionable missing sections"
+    ],
+    "tradeoffs": [
+      "Encourages standardised completeness even when a recommended section is irrelevant to a member",
+      "The All-Star label can imply quality when it primarily measures field completion"
+    ],
+    "risks": [
+      "Prompts may encourage disclosure of information users would prefer to omit",
+      "Current rules and interface differ from older versions, so historical screenshots require clear dating"
+    ],
+    "relatedImplementationIds": [],
+    "sourceIds": ["src-linkedin-profile-strength-help", "src-linkedin-edit-profile-help", "src-linkedin-screenshot-context"],
+    "screenshotIds": ["sc-linkedin-profile-strength"],
+    "lastReviewed": "2026-10-30"
+  },
+  {
+    "id": "nike-run-club-challenges",
+    "product": "Nike Run Club",
+    "feature": "Challenges",
+    "industry": "Health & Fitness",
+    "description": "Nike Run Club supports individual, community and custom challenges. Individual challenges ask a runner to reach a specified distance within a time window. Community challenges aggregate many runners' progress toward a shared distance goal. Custom challenges let a user choose distance and dates and invite friends; the top three finishers receive gold, silver or bronze medal achievements. Completing any challenge adds a trophy under Achievements.",
+    "mechanicStack": [
+      { "patternId": "time-limited-challenge", "role": "Core mechanic — individual and custom challenges define a distance target within a stated window." },
+      { "patternId": "community-challenge", "role": "Core mechanic — community challenges aggregate participants' running toward a collective distance goal." },
+      { "patternId": "social-fitness-competition", "role": "Supporting — custom challenges compare invited participants and recognise the top three." },
+      { "patternId": "achievement-badges", "role": "Supporting — completion and placement add trophies and medals to the runner's Achievements." }
+    ],
+    "behaviourIds": ["complete", "deepen", "sustain", "connect", "repeat"],
+    "psychologyLinks": [
+      { "psychologyId": "goals-progress", "qualification": "A defined distance and time window creates a concrete target and feedback loop. The official sources document the design but do not demonstrate improved adherence." },
+      { "psychologyId": "social-influence", "qualification": "Community goals and invited challenges can introduce accountability, cooperation or competition. Effects will vary among runners and may be motivating or discouraging." },
+      { "psychologyId": "learning-reinforcement", "qualification": "Trophies and placement medals recognise completion and performance, but no controlled outcome evidence was identified." }
+    ],
+    "evidenceIds": ["ev-nike-rc-challenges-illustrative"],
+    "designDecisions": [
+      "Supports individual, collaborative and competitive variants within one challenge system",
+      "Uses distance and time as simple, measurable completion criteria",
+      "Lets users create challenges and invite known participants",
+      "Separates participation/completion trophies from top-three placement medals"
+    ],
+    "tradeoffs": [
+      "Competitive comparison may demotivate new or slower runners",
+      "Community totals can make an individual's contribution feel insignificant at large scale"
+    ],
+    "risks": [
+      "Distance targets may encourage unsafe training increases or running through injury",
+      "Recorded progress depends on device, GPS and activity-sync reliability"
+    ],
+    "relatedImplementationIds": [],
+    "sourceIds": ["src-nike-help-challenges", "src-nike-nrc-app"],
+    "screenshotIds": ["sc-nike-run-club-challenges"],
+    "lastReviewed": "2026-10-30"
   }
 ]

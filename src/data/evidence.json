@@ -47,5 +47,26 @@
     "summary": "Strava's official Help Center documentation establishes how segments, personal results, PR markers, leaderboards and privacy controls operate.",
     "limitations": "No controlled or observational outcome study was identified in the reviewed first-party sources; this entry documents how the feature works, not evidence that it changes athletic behaviour or adherence.",
     "sourceIds": ["src-strava-segment-results", "src-strava-privacy-controls"]
+  },
+  {
+    "id": "ev-starbucks-challenge-illustrative",
+    "classification": "illustrative",
+    "summary": "Starbucks' official Rewards and terms pages establish Stars as an earned, redeemable currency and document personalised and promotional Bonus Star offers. A historical, secondary-sourced screenshot documents one 2018 challenge execution.",
+    "limitations": "No controlled or observational outcome study was identified in the reviewed first-party sources; this entry documents how the Stars currency and promotional offer mechanics work, not evidence that any specific challenge changes purchasing behaviour. The screenshot is from an independent blog, not an official Starbucks media asset, and shows a historical execution that may no longer reflect current challenge formats or reward values.",
+    "sourceIds": ["src-starbucks-rewards", "src-starbucks-rewards-terms", "src-starbucks-rewards-promo"]
+  },
+  {
+    "id": "ev-linkedin-profile-illustrative",
+    "classification": "illustrative",
+    "summary": "LinkedIn's official help documentation establishes the profile strength meter, its three named states, the sections required for each, and its visibility and removal behaviour.",
+    "limitations": "No controlled or observational outcome study was identified in the reviewed first-party sources; this entry documents how the meter works, not evidence that it changes profile-completion behaviour. The screenshot is a historical, member-authored LinkedIn Pulse article image, not an official LinkedIn Help media asset, and shows an older interface.",
+    "sourceIds": ["src-linkedin-profile-strength-help", "src-linkedin-edit-profile-help"]
+  },
+  {
+    "id": "ev-nike-rc-challenges-illustrative",
+    "classification": "illustrative",
+    "summary": "Nike's official Help and Nike Run Club app pages establish individual, community and custom challenge types, their targets and windows, and the trophy and medal achievements awarded for completion and top-three placement.",
+    "limitations": "No controlled or observational outcome study was identified in the reviewed first-party sources; this entry documents how the challenge types work, not evidence that they improve running frequency or adherence.",
+    "sourceIds": ["src-nike-help-challenges", "src-nike-nrc-app"]
   }
 ]
