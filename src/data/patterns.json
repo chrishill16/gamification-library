@@ -188,5 +188,105 @@
       "Poorly tuned frequency or tone can shift from helpful reminder to perceived nagging, risking notification fatigue or opt-out"
     ],
     "sourceIds": ["src-duolingo-streaks-blog", "src-duolingo-friend-streak"]
+  },
+  {
+    "id": "activity-history-heatmap",
+    "name": "Activity History Heatmap",
+    "familyId": "feedback-reinforcement",
+    "patternType": "adjacent",
+    "classificationRationale": "This visualises historical activity with colour-coded feedback but defines no objective, streak rule, score or competitive rank — a behavioural feedback display rather than a game structure, so it is classified as an Adjacent Engagement Pattern, not a streak.",
+    "definition": "A calendar-style grid showing a rolling period of a user's historical activity, where colour intensity per cell represents the relative volume of qualifying actions that day.",
+    "operation": "The product tracks qualifying actions against rule-based eligibility criteria, aggregates them per day, and maps the daily total onto a colour scale from low to high intensity across a fixed rolling window (e.g. the past year).",
+    "variants": [
+      "Showing anonymised activity counts from otherwise-private context without exposing the underlying details",
+      "Accompanying numeric totals (e.g. a running count) alongside the visual grid"
+    ],
+    "possibleBehaviourIds": ["sustain", "contribute", "repeat"],
+    "psychologyLinks": [
+      {
+        "psychologyId": "goals-progress",
+        "qualification": "A persistent visual history can make recent gaps and accumulated activity salient; this is a plausible feedback mechanism, not evidence the grid was designed or shown to increase activity frequency."
+      }
+    ],
+    "risks": [
+      "Can reward raw frequency more visibly than the quality or impact of the underlying activity",
+      "Users may read blank cells as a negative signal even when inactivity was appropriate or intentional",
+      "Rule-based eligibility criteria can make the display diverge from a user's own intuitive sense of their activity"
+    ],
+    "sourceIds": ["src-github-contributions-concept", "src-github-contributions-reference", "src-github-blog-contributions"]
+  },
+  {
+    "id": "social-signalling",
+    "name": "Social Signalling / Public Profile",
+    "familyId": "collaboration-community",
+    "patternType": "adjacent",
+    "classificationRationale": "Making activity visible to others is a reputational/self-presentation mechanism, not a game structure with an objective, score or competitive outcome, so it is classified as an Adjacent Engagement Pattern.",
+    "definition": "Displaying a summary of a user's activity or history on a profile that other users can view, independent of any explicit ranking or reward.",
+    "operation": "The product surfaces an activity summary (e.g. a history grid, badge collection or stats panel) on a profile page visible to other users by default or by choice, without itself scoring or ranking that activity against others.",
+    "variants": [
+      "Default public visibility with an opt-out",
+      "Visibility limited to connected users (e.g. followers) rather than everyone"
+    ],
+    "possibleBehaviourIds": ["connect", "contribute"],
+    "psychologyLinks": [
+      {
+        "psychologyId": "social-influence",
+        "qualification": "Public visibility may create reputational or self-presentation incentives; documented here as a plausible mechanism from the product's own visibility design, not a measured behavioural effect."
+      }
+    ],
+    "risks": [
+      "Can encourage performative activity aimed at how a profile looks to others rather than the underlying work itself",
+      "Visibility defaults matter — public-by-default shifts incentives differently than opt-in visibility"
+    ],
+    "sourceIds": ["src-github-contributions-concept"]
+  },
+  {
+    "id": "leaderboard",
+    "name": "Leaderboard",
+    "familyId": "competition-comparison",
+    "patternType": "mechanic",
+    "classificationRationale": "An ongoing ranked comparison of participants' results against a shared, repeatable benchmark is a competitive game structure, classified as a Gamification Mechanic — distinct from a short, time-boxed informal contest.",
+    "definition": "A persistent ranked list of participants' results against a shared, repeatable benchmark (such as a fixed course or task), rather than a one-off or time-boxed contest.",
+    "operation": "The product matches qualifying results to the shared benchmark, ranks eligible participants by a chosen metric, and lets a participant filter the ranking (e.g. by time period or demographic group) or restrict the view to just their own results.",
+    "variants": [
+      "Filtering the leaderboard to demographic or equipment categories (e.g. age or weight group)",
+      "Restricting a participant's own results to a private, non-ranked view of just their own history on the same benchmark"
+    ],
+    "possibleBehaviourIds": ["deepen", "repeat", "connect"],
+    "psychologyLinks": [
+      {
+        "psychologyId": "social-influence",
+        "qualification": "Public rankings introduce comparison and competition; effects plausibly vary by a participant's ability and whether they find ranking motivating or discouraging — not established as uniformly motivating in the reviewed sources."
+      }
+    ],
+    "risks": [
+      "Can demotivate lower-performing or less competitive participants",
+      "Where the benchmark is physical or geographic, results can be affected by conditions or equipment rather than effort alone",
+      "May encourage unsafe or excessive effort in pursuit of rank"
+    ],
+    "sourceIds": ["src-strava-segment-results", "src-strava-privacy-controls"]
+  },
+  {
+    "id": "personal-best-record",
+    "name": "Personal Best / Record",
+    "familyId": "levels-mastery",
+    "patternType": "mechanic",
+    "classificationRationale": "Tracking and visibly marking a user's own best result over repeated attempts is a game-score structure (a personal high score), classified as a Gamification Mechanic.",
+    "definition": "A tracked record of a user's own best result on a repeatable benchmark, visually marked and plotted against their historical attempts.",
+    "operation": "The product records each qualifying attempt at the same benchmark, identifies the best result by the relevant metric, marks it distinctly among the user's plotted history, and updates it whenever a new best is achieved.",
+    "variants": [
+      "Letting the user set a target result for a specific benchmark to work toward"
+    ],
+    "possibleBehaviourIds": ["deepen", "repeat"],
+    "psychologyLinks": [
+      {
+        "psychologyId": "goals-progress",
+        "qualification": "Concrete feedback against a stable, repeatable task plausibly supports mastery-oriented goal pursuit; the reviewed sources describe the feature, not a measured effect on adherence or performance."
+      }
+    ],
+    "risks": [
+      "Stable benchmarks can still be affected by external conditions, so a 'best' result may not purely reflect improved effort or skill"
+    ],
+    "sourceIds": ["src-strava-segment-results"]
   }
 ]

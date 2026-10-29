@@ -33,5 +33,19 @@
     "summary": "Spotify reported that Wrapped engagement grew roughly 10% year-over-year across 184 markets and 53 languages for its most recent annual campaign at the time of review.",
     "limitations": "A company-published growth figure from an earnings-related communication, with no independent methodology disclosed for how 'engagement' was measured.",
     "sourceIds": ["src-spotify-ads-q4-2024"]
+  },
+  {
+    "id": "ev-github-contributions-illustrative",
+    "classification": "illustrative",
+    "summary": "GitHub's official documentation establishes the contributions graph's existence, visual encoding, qualifying-activity rules and visibility behaviour.",
+    "limitations": "No controlled or observational outcome study was identified in the reviewed first-party sources; this entry documents how the feature works, not evidence that it changes contribution behaviour.",
+    "sourceIds": ["src-github-contributions-concept", "src-github-contributions-reference"]
+  },
+  {
+    "id": "ev-strava-segments-illustrative",
+    "classification": "illustrative",
+    "summary": "Strava's official Help Center documentation establishes how segments, personal results, PR markers, leaderboards and privacy controls operate.",
+    "limitations": "No controlled or observational outcome study was identified in the reviewed first-party sources; this entry documents how the feature works, not evidence that it changes athletic behaviour or adherence.",
+    "sourceIds": ["src-strava-segment-results", "src-strava-privacy-controls"]
   }
 ]

@@ -22,7 +22,9 @@
       { "patternId": "daily-streak", "rationale": "A visible, resettable count of consecutive days directly targets repetition of a specific qualifying action." },
       { "patternId": "adaptive-daily-goal", "rationale": "Lowering the bar required to count as 'done that day' is a direct lever on repetition frequency, as seen in Duolingo's own change." },
       { "patternId": "social-fitness-competition", "rationale": "A short, time-boxed comparison with others gives a recurring reason to act within the window." },
-      { "patternId": "nudge-reminder", "rationale": "A timely prompt close to a deadline is a direct intervention aimed at getting one more repetition in before the window closes." }
+      { "patternId": "nudge-reminder", "rationale": "A timely prompt close to a deadline is a direct intervention aimed at getting one more repetition in before the window closes." },
+      { "patternId": "activity-history-heatmap", "rationale": "A persistent, visible record of daily activity can make recent gaps salient, nudging a user to act again today." },
+      { "patternId": "leaderboard", "rationale": "An ongoing, repeatable benchmark gives a standing reason to return and improve a ranked result." }
     ],
     "relatedBehaviourIds": ["sustain", "activate"]
   },
@@ -38,7 +40,8 @@
       { "patternId": "daily-streak", "rationale": "The mechanic's entire purpose is maintaining an unbroken run, directly targeting sustained participation." },
       { "patternId": "shared-streak", "rationale": "Mutual stakes with another person are intended to make a lapse feel costlier, supporting sustained participation." },
       { "patternId": "progress-ring", "rationale": "A recurring daily goal with visible closure gives a reason to keep returning rather than letting the habit lapse." },
-      { "patternId": "nudge-reminder", "rationale": "Reminders near a deadline are a direct lever against the natural decay of participation." }
+      { "patternId": "nudge-reminder", "rationale": "Reminders near a deadline are a direct lever against the natural decay of participation." },
+      { "patternId": "activity-history-heatmap", "rationale": "A long-running visible history gives a reason not to let a well-established record lapse, even without a formal streak rule." }
     ],
     "relatedBehaviourIds": ["repeat", "complete"]
   },
@@ -79,7 +82,8 @@
     ],
     "patternLinks": [
       { "patternId": "adaptive-daily-goal", "rationale": "The goal-intensity setting is a direct lever on how much effort a user commits per session." },
-      { "patternId": "achievement-badges", "rationale": "Milestone awards tied to personal bests can encourage pushing effort further than the minimum required." }
+      { "patternId": "achievement-badges", "rationale": "Milestone awards tied to personal bests can encourage pushing effort further than the minimum required." },
+      { "patternId": "personal-best-record", "rationale": "Tracking and visibly marking a user's own best result directly targets improving skill or effort on a familiar task." }
     ],
     "relatedBehaviourIds": ["complete", "explore"]
   },
@@ -94,7 +98,9 @@
     "patternLinks": [
       { "patternId": "shared-streak", "rationale": "The mechanic only functions between two or more connected users, directly targeting interaction." },
       { "patternId": "social-fitness-competition", "rationale": "Comparing scores against others is a direct, if lightweight, form of competitive connection." },
-      { "patternId": "personalized-year-review", "rationale": "The pattern's shareable format is explicitly designed to be posted and seen by others, turning private data into a social object." }
+      { "patternId": "personalized-year-review", "rationale": "The pattern's shareable format is explicitly designed to be posted and seen by others, turning private data into a social object." },
+      { "patternId": "leaderboard", "rationale": "A shared, ranked comparison against other participants is a direct form of competitive connection." },
+      { "patternId": "social-signalling", "rationale": "Making a user's activity visible on a public profile is a direct, if passive, way of connecting with other users." }
     ],
     "relatedBehaviourIds": ["contribute"]
   },
@@ -107,7 +113,9 @@
       "Grow participation in peer-support or peer-accountability features"
     ],
     "patternLinks": [
-      { "patternId": "shared-streak", "rationale": "Sending a nudge to a friend whose streak is at risk is a small act of contributing to someone else's consistency, not just your own." }
+      { "patternId": "shared-streak", "rationale": "Sending a nudge to a friend whose streak is at risk is a small act of contributing to someone else's consistency, not just your own." },
+      { "patternId": "activity-history-heatmap", "rationale": "A public record of contribution activity is itself a form of visible contribution to a shared project or community." },
+      { "patternId": "social-signalling", "rationale": "Making contribution activity visible to others is a direct way the pattern surfaces value created for a wider community, not just the user themselves." }
     ],
     "relatedBehaviourIds": ["connect"]
   },

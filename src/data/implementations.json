@@ -102,5 +102,81 @@
     "sourceIds": ["src-spotify-wrapped-methodology", "src-spotify-wrapped-art-science", "src-spotify-ads-q4-2024"],
     "screenshotIds": ["sc-spotify-wrapped"],
     "lastReviewed": "2026-10-29"
+  },
+  {
+    "id": "github-contributions-calendar",
+    "product": "GitHub",
+    "feature": "Contributions Calendar",
+    "industry": "Developer Tools / Software Collaboration",
+    "description": "GitHub profiles include a contributions graph covering the previous year, where each calendar cell represents a day and colour intensity represents the relative number of qualifying contributions. Counted activity includes things like commits to a repository's default branch, pull requests and issues opened in a standalone (non-fork) repository, pull request reviews, repository creation, and discussions — each subject to GitHub's eligibility rules. Public contribution activity is visible on a profile by default; private-repository activity can be shown as an anonymised count without exposing repository details. GitHub does not define a streak rule, points system, competitive rank or reward for an unbroken sequence of days — the calendar is a historical record, not a streak.",
+    "mechanicStack": [
+      { "patternId": "activity-history-heatmap", "role": "Core mechanic — compresses a year of qualifying activity into a day-by-day colour-intensity grid." },
+      { "patternId": "social-signalling", "role": "Supporting — the graph is shown on a public profile, visible to other users by default." }
+    ],
+    "behaviourIds": ["sustain", "contribute", "repeat", "deepen"],
+    "psychologyLinks": [
+      { "psychologyId": "goals-progress", "qualification": "A persistent visual history may make recent gaps and accumulated activity salient. This is a plausible feedback mechanism, not evidence that GitHub designed or validated the graph to increase contribution frequency." },
+      { "psychologyId": "social-influence", "qualification": "Public display may create reputational or self-presentation incentives. GitHub's documentation describes visibility, not a measured causal effect on behaviour." }
+    ],
+    "evidenceIds": ["ev-github-contributions-illustrative"],
+    "designDecisions": [
+      "Shows a rolling year, balancing a long-term record with a compact profile component",
+      "Uses relative colour intensity rather than exposing every underlying event in the grid",
+      "Allows private contribution counts to appear while withholding repository-specific details",
+      "Treats contribution eligibility as rule-based — not every action on GitHub counts"
+    ],
+    "tradeoffs": [
+      "Counting only rule-based eligible activity (e.g. commits to a default branch, not every action) trades a simple, consistent signal for occasional divergence from a user's own sense of their work",
+      "Showing a rolling year balances a long-term record against profile compactness, at the cost of not showing older history at a glance"
+    ],
+    "risks": [
+      "A visible activity grid can reward raw frequency more clearly than the quality or impact of the underlying work",
+      "Users may read blank cells as a negative signal even when inactivity was appropriate (time off, review-heavy work, etc.)",
+      "Public visibility by default can encourage performative activity or invite misleading comparisons across very different roles and workflows"
+    ],
+    "relatedImplementationIds": [],
+    "sourceIds": ["src-github-contributions-concept", "src-github-contributions-reference", "src-github-blog-contributions"],
+    "screenshotIds": ["sc-github-contributions"],
+    "lastReviewed": "2026-10-30"
+  },
+  {
+    "id": "strava-segments-leaderboards",
+    "product": "Strava",
+    "feature": "Segments and Leaderboards",
+    "industry": "Health & Fitness / Social Fitness",
+    "description": "Strava matches recorded activities to defined route segments and records an athlete's time for each matched effort. A segment's leaderboard ranks eligible athletes' times, filterable by time period and by age or weight group, while a separate 'My Results' view orders only the athlete's own efforts chronologically and plots them over time with their personal record marked by a gold dot. Athletes can compare time, pace or speed, heart rate, power and date across their own efforts. Public leaderboard eligibility depends on the activity's privacy setting — only activities set to 'Everyone' appear on public leaderboards — and some comparison and analysis features are limited to subscribers.",
+    "mechanicStack": [
+      { "patternId": "leaderboard", "role": "Core mechanic — ranks eligible athletes' times on a defined segment, filterable by period and demographic group." },
+      { "patternId": "personal-best-record", "role": "Core mechanic — tracks and plots the athlete's own fastest effort on the segment over time." },
+      { "patternId": "achievement-badges", "role": "Supporting — the personal record is marked with a distinct gold marker among the athlete's plotted results." }
+    ],
+    "behaviourIds": ["deepen", "repeat", "connect", "sustain"],
+    "psychologyLinks": [
+      { "psychologyId": "goals-progress", "qualification": "Personal-result history and PR markers provide concrete feedback against a stable task. This plausibly supports mastery-oriented goal pursuit; the reviewed sources do not demonstrate a causal effect on exercise adherence." },
+      { "psychologyId": "social-influence", "qualification": "Public rankings introduce comparison and competition. Effects will vary by ability, privacy preferences and whether users find ranking motivating or discouraging." },
+      { "psychologyId": "learning-reinforcement", "qualification": "Immediate recognition of PRs can plausibly reinforce improvement, but no controlled outcome evidence was identified in the reviewed official documentation." }
+    ],
+    "evidenceIds": ["ev-strava-segments-illustrative"],
+    "designDecisions": [
+      "Compares performance on a stable geographic segment rather than an entire heterogeneous activity",
+      "Separates public rankings from the athlete's private, longitudinal 'My Results' view",
+      "Marks the personal record visually and plots results over time",
+      "Makes public leaderboard participation conditional on the activity's privacy setting",
+      "Places some advanced filtering and analysis behind a subscription"
+    ],
+    "tradeoffs": [
+      "Comparing performance on a stable geographic segment trades the richness of a full heterogeneous activity for a cleaner, repeatable benchmark",
+      "Gating some filtering and analysis behind a subscription means the full comparison experience isn't available to every user",
+      "Making public leaderboard participation conditional on privacy settings means two athletes with identical effort can have very different visibility"
+    ],
+    "risks": [
+      "Public rankings may demotivate less competitive or lower-performing athletes",
+      "Geographic leaderboards can be affected by conditions, equipment and GPS accuracy rather than only athletic effort",
+      "Competitive pressure around segment times may encourage unsafe effort or route choices"
+    ],
+    "relatedImplementationIds": [],
+    "sourceIds": ["src-strava-segment-results", "src-strava-ride-activity-pages", "src-strava-privacy-controls"],
+    "screenshotIds": ["sc-strava-segments"],
+    "lastReviewed": "2026-10-30"
   }
 ]

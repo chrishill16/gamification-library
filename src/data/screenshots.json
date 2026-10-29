@@ -34,5 +34,29 @@
     "attribution": "© Spotify. First-party product-experience image from Spotify's official newsroom. Not freely licensed — reproduced here for commentary/reference; verify Spotify's brand and media-use terms before any broader publication.",
     "lastReviewed": "2026-10-29",
     "altText": "Two Spotify Wrapped 2025 story slides on a yellow background: 'You listened. We counted.' and a personalised minutes-listened total of 78,432 minutes with a 'Share this story' button."
+  },
+  {
+    "id": "sc-github-contributions",
+    "implementationId": "github-contributions-calendar",
+    "product": "GitHub",
+    "feature": "Contributions calendar (profile)",
+    "imagePath": "/gamification-library/screenshots/sc-github-contributions.png",
+    "sourceUrl": "https://docs.github.com/en/account-and-profile/concepts/contributions-on-your-profile",
+    "captureDate": "2026-10-29",
+    "attribution": "© GitHub. First-party screenshot embedded in GitHub's official documentation. Not freely licensed — reproduced here for commentary/reference; verify GitHub's brand and media-use terms before any broader publication.",
+    "lastReviewed": "2026-10-30",
+    "altText": "A GitHub profile contributions calendar showing '3,936 contributions in 2022' as a grid of colour-intensity day cells from January to December."
+  },
+  {
+    "id": "sc-strava-segments",
+    "implementationId": "strava-segments-leaderboards",
+    "product": "Strava",
+    "feature": "Segment 'My Results' graph and leaderboard",
+    "imagePath": "/gamification-library/screenshots/sc-strava-segments.png",
+    "sourceUrl": "https://support.strava.com/en-us/articles/15401900-how-do-i-view-my-segment-results-on-strava",
+    "captureDate": "2026-10-29",
+    "attribution": "© Strava. First-party screenshot from Strava's official Help Center (source file: 2_0_km_Virtual_Ride_Segment_in_London__England__United_Kingdom_on_Strava.jpg, originally served via a signed, expiring Intercom attachment URL — the durable official context page is used as the canonical source link here). Not freely licensed — reproduced here for commentary/reference; verify Strava's brand and media-use terms before any broader publication.",
+    "lastReviewed": "2026-10-30",
+    "altText": "A Strava segment page showing the athlete's 'My Results' effort graph with a personal record marked, and a Leaderboards panel with ranked results."
   }
 ]

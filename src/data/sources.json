@@ -54,5 +54,47 @@
     "url": "https://ads.spotify.com/en-AU/news-and-insights/spotify-fourth-quarter-earnings-2024/",
     "publisher": "Spotify Advertising",
     "accessedDate": "2026-10-29"
+  },
+  {
+    "id": "src-github-contributions-concept",
+    "title": "Contributions on Your Profile",
+    "url": "https://docs.github.com/en/account-and-profile/concepts/contributions-on-your-profile",
+    "publisher": "GitHub Docs",
+    "accessedDate": "2026-10-30"
+  },
+  {
+    "id": "src-github-contributions-reference",
+    "title": "Profile Contributions Reference",
+    "url": "https://docs.github.com/en/account-and-profile/reference/profile-contributions-reference",
+    "publisher": "GitHub Docs",
+    "accessedDate": "2026-10-30"
+  },
+  {
+    "id": "src-github-blog-contributions",
+    "title": "Introducing Contributions",
+    "url": "https://github.blog/news-insights/product-news/introducing-contributions/",
+    "publisher": "GitHub Blog",
+    "accessedDate": "2026-10-30"
+  },
+  {
+    "id": "src-strava-segment-results",
+    "title": "How Do I View My Segment Results on Strava?",
+    "url": "https://support.strava.com/en-us/articles/15401900-how-do-i-view-my-segment-results-on-strava",
+    "publisher": "Strava Support",
+    "accessedDate": "2026-10-30"
+  },
+  {
+    "id": "src-strava-ride-activity-pages",
+    "title": "Ride Activity Pages",
+    "url": "https://support.strava.com/en-us/articles/15401886-ride-activity-pages",
+    "publisher": "Strava Support",
+    "accessedDate": "2026-10-30"
+  },
+  {
+    "id": "src-strava-privacy-controls",
+    "title": "How Do My Activity Privacy Controls Work on Strava?",
+    "url": "https://support.strava.com/en-us/articles/15401987-how-do-my-activity-privacy-controls-work-on-strava",
+    "publisher": "Strava Support",
+    "accessedDate": "2026-10-30"
   }
 ]
