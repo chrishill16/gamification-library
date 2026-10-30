@@ -361,7 +361,7 @@
       "Can encourage standardised completion of recommended steps even where a step isn't relevant to a particular user",
       "A top-tier label can imply quality or value when it may only reflect field completion"
     ],
-    "sourceIds": ["src-linkedin-profile-strength-help"]
+    "sourceIds": ["src-linkedin-profile-level-help", "src-linkedin-profile-strength-help"]
   },
   {
     "id": "community-challenge",

@@ -75,13 +75,13 @@
     "id": "sc-linkedin-profile-strength",
     "implementationId": "linkedin-profile-level-meter",
     "product": "LinkedIn",
-    "feature": "Profile strength meter — All-Star state",
+    "feature": "Profile level meter — All-Star state",
     "imagePath": "/gamification-library/screenshots/sc-linkedin-profile-strength.jpg",
     "sourceUrl": "https://www.linkedin.com/pulse/achieving-all-star-status-linkedin-sophie-milliken-fcipd-frsa",
     "captureDate": "2026-10-30",
-    "attribution": "Historical LinkedIn All-Star profile-strength UI from March 2021, sourced from a member-authored LinkedIn Pulse article — not an official LinkedIn Help media asset. Current levels and behaviour are documented separately by LinkedIn Help. Reproduced here for commentary/reference; not freely licensed — verify rights before any broader publication.",
+    "attribution": "Historical LinkedIn All-Star profile-level UI from March 2021, sourced from a member-authored LinkedIn Pulse article — not an official LinkedIn Help media asset. Older LinkedIn material (including the help article originally reviewed for this entry) referred to this same feature as the \"profile strength meter\"; current rules and interface are documented separately by LinkedIn Help. Reproduced here for commentary/reference; not freely licensed — verify rights before any broader publication.",
     "lastReviewed": "2026-10-30",
-    "altText": "A LinkedIn profile strength panel showing the All-Star completion state, the highest of three named profile-completeness levels."
+    "altText": "A LinkedIn profile level panel showing the All-Star completion state, the highest of three named profile-completeness levels."
   },
   {
     "id": "sc-nike-run-club-challenges",
@@ -93,6 +93,6 @@
     "captureDate": "2026-10-30",
     "attribution": "© Nike. First-party image from Nike's official Nike Run Club (NRC) app marketing page. Not freely licensed — reproduced here for commentary/reference; verify Nike's brand and media-use terms before any broader publication.",
     "lastReviewed": "2026-10-30",
-    "altText": "A Nike Run Club app screen showing distance-based running challenges with progress and participant information."
+    "altText": "Nike Run Club marketing image showing 25K, 5K Weekly and 5K challenge cards."
   }
 ]

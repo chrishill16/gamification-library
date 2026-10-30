@@ -143,7 +143,7 @@
     "id": "strava-segments-leaderboards",
     "product": "Strava",
     "feature": "Segments and Leaderboards",
-    "industry": "Health & Fitness / Social Fitness",
+    "industry": "Health & Fitness",
     "description": "Strava matches recorded activities to defined route segments and records an athlete's time for each matched effort. A segment's leaderboard ranks eligible athletes' times, filterable by time period and by age or weight group, while a separate 'My Results' view orders only the athlete's own efforts chronologically and plots them over time with their personal record marked by a gold dot. Athletes can compare time, pace or speed, heart rate, power and date across their own efforts. Public leaderboard eligibility depends on the activity's privacy setting — only activities set to 'Everyone' appear on public leaderboards — and some comparison and analysis features are limited to subscribers.",
     "mechanicStack": [
       { "patternId": "leaderboard", "role": "Core mechanic — ranks eligible athletes' times on a defined segment, filterable by period and demographic group." },
@@ -219,9 +219,9 @@
   {
     "id": "linkedin-profile-level-meter",
     "product": "LinkedIn",
-    "feature": "Profile Strength Meter",
+    "feature": "Profile Level Meter",
     "industry": "Professional Networking",
-    "description": "LinkedIn's profile strength meter shows a member how complete their profile is and recommends sections to add. LinkedIn's current help documentation describes three states: Beginner, Intermediate after completing four recommended sections, and All-Star after completing all seven (Profile Photo, Location, Industry, Education, Position, Skills, Summary). The meter is private to the member, appears on desktop and mobile, and stops being displayed once the recommended sections are complete. The supplied screenshot is a historical All-Star completion state from a 2021 LinkedIn-hosted member article — current rules and interface are documented separately by LinkedIn Help.",
+    "description": "LinkedIn's profile level meter shows a member how complete their profile is and recommends sections to add. LinkedIn's current help documentation describes three states: Beginner, Intermediate after completing four recommended sections, and All-Star after completing all seven (Profile Photo, Location, Industry, Education, Position, Skills, Summary). The meter is private to the member, appears on desktop and mobile, and stops being displayed once the recommended sections are complete. Older LinkedIn material, including a help article previously reviewed for this entry, referred to the same feature as the \"profile strength meter\" — the current official term is \"profile level meter\". The supplied screenshot is a historical All-Star completion state from a 2021 LinkedIn-hosted member article — current rules and interface are documented separately by LinkedIn Help.",
     "mechanicStack": [
       { "patternId": "named-progress-levels", "role": "Core mechanic — names the Beginner, Intermediate and All-Star states and the sections required to reach each." },
       { "patternId": "progress-ring", "role": "Core mechanic — visualises progress toward completing the recommended profile sections and identifies the next missing one." }
@@ -247,7 +247,7 @@
       "Current rules and interface differ from older versions, so historical screenshots require clear dating"
     ],
     "relatedImplementationIds": [],
-    "sourceIds": ["src-linkedin-profile-strength-help", "src-linkedin-edit-profile-help", "src-linkedin-screenshot-context"],
+    "sourceIds": ["src-linkedin-profile-level-help", "src-linkedin-profile-strength-help", "src-linkedin-edit-profile-help", "src-linkedin-screenshot-context"],
     "screenshotIds": ["sc-linkedin-profile-strength"],
     "lastReviewed": "2026-10-30"
   },

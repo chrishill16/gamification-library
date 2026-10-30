@@ -58,9 +58,9 @@
   {
     "id": "ev-linkedin-profile-illustrative",
     "classification": "illustrative",
-    "summary": "LinkedIn's official help documentation establishes the profile strength meter, its three named states, the sections required for each, and its visibility and removal behaviour.",
+    "summary": "LinkedIn's official help documentation establishes the profile level meter (also referred to as the profile strength meter in some LinkedIn material), its three named states, the sections required for each, and its visibility and removal behaviour.",
     "limitations": "No controlled or observational outcome study was identified in the reviewed first-party sources; this entry documents how the meter works, not evidence that it changes profile-completion behaviour. The screenshot is a historical, member-authored LinkedIn Pulse article image, not an official LinkedIn Help media asset, and shows an older interface.",
-    "sourceIds": ["src-linkedin-profile-strength-help", "src-linkedin-edit-profile-help"]
+    "sourceIds": ["src-linkedin-profile-level-help", "src-linkedin-profile-strength-help", "src-linkedin-edit-profile-help"]
   },
   {
     "id": "ev-nike-rc-challenges-illustrative",
